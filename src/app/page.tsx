@@ -8,8 +8,8 @@ import Hero from "@/components/hero"
 import Projects from "@/components/project"
 import Sidebar from "@/components/sidebar"
 import Skills from "@/components/skill"
+import { ThemeProvider } from "next-themes"
 import { useState, useEffect } from "react"
-import { ThemeProvider } from "./context/themecontext"
 
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false)
@@ -30,7 +30,8 @@ export default function Home() {
   }
 
   return (
-    <ThemeProvider>
+    <ThemeProvider attribute="class">
+
     <div className="min-h-screen bg-purple-50 dark:bg-gray-900">
       <Header />
       <Sidebar />
@@ -48,7 +49,7 @@ export default function Home() {
       >
         Contact Me
       </button>
-    </div>
+    </div> 
     </ThemeProvider>
   )
 }
