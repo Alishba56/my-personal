@@ -2,7 +2,7 @@
 
 import { useInView } from "react-intersection-observer";
 import { useAnimation, type AnimationControls } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 export function useScrollAnimation(): [React.RefObject<HTMLDivElement>, AnimationControls] {
   const controls = useAnimation();
