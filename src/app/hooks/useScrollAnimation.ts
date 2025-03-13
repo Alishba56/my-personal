@@ -1,48 +1,22 @@
-"use client"
+ "use client"
 
-import { useEffect } from "react"
+import { useInView } from "react-intersection-observer"
+import { useAnimation, type AnimationControls } from "framer-motion"
+import { useEffect, useRef } from "react"
 
-const useScrollAnimation = () => {
+export function useScrollAnimation(): [React.RefObject<HTMLDivElement>, AnimationControls] {
+  const controls = useAnimation()
+  const ref = useRef<HTMLDivElement>(null)
+  const [inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  })
+
   useEffect(() => {
-    // Function to handle scroll events
-    const handleScroll = () => {
-      // Get all elements with the class 'scroll-animated'
-      const elements = document.querySelectorAll(".scroll-animated")
-
-      // Loop through each element
-      elements.forEach((element) => {
-        // Check if the element is in the viewport
-        const elementTop = element.getBoundingClientRect().top
-        const elementBottom = element.getBoundingClientRect().bottom
-        const windowHeight = window.innerHeight
-
-        // Adjust the threshold as needed (e.g., 0.75 for 75% visibility)
-        const threshold = 0.75
-
-        if (elementTop < windowHeight * threshold && elementBottom >= 0) {
-          // Add the 'active' class to trigger the animation
-          element.classList.add("active")
-        } else {
-          // Remove the 'active' class if the element is not in the viewport
-          element.classList.remove("active")
-        }
-      })
+    if (inView) {
+      controls.start("visible")
     }
+  }, [controls, inView])
 
-    // Add the scroll event listener
-    window.addEventListener("scroll", handleScroll)
-
-    // Initial check on component mount
-    handleScroll()
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
-
-  return {}
+  return [ref, controls]
 }
-
-export default useScrollAnimation
-
