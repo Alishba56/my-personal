@@ -13,57 +13,120 @@ const projects = [
       "A full-stack e-commerce solution built with Next.js, featuring product listings, shopping cart, and Stripe integration for payments.",
     image: "/placeholder.svg?height=400&width=600",
     category: "Full Stack",
-    github: "https://github.com/johndoe/ecommerce-platform",
-    live: "https://ecommerce-platform-demo.vercel.app",
+    github: "https://github.com/Alishba56/Next.js_Design_Jam_2024",
+    live: "https://honest-bazar.vercel.app/",
   },
   {
-    title: "Task Management App",
+    title: "Personal_Portfolio",
     description:
       "A React-based task management application with drag-and-drop functionality, user authentication, and real-time updates using Firebase.",
     image: "/placeholder.svg?height=300&width=400",
     category: "Frontend",
-    github: "https://github.com/johndoe/task-management-app",
-    live: "https://task-management-app-demo.netlify.app",
+    github: "https://github.com/Alishba56/-project-personal-website-tailwind",
+    live: "https://project-personal-website-git-01825f-alishbas-projects-e974bd90.vercel.app/",
   },
   {
-    title: "Weather Dashboard",
+    title: "Unit-converter",
     description:
       "A weather dashboard built with Vue.js, utilizing the OpenWeatherMap API and Chart.js for data visualization.",
     image: "/placeholder.svg?height=500&width=400",
     category: "Frontend",
-    github: "https://github.com/johndoe/weather-dashboard",
-    live: "https://weather-dashboard-demo.netlify.app",
+    github: "https://github.com/Alishba56/unit-converter-in-python",
+    live: "https://unit-converter-in-python-6mquzdanubii8sns9waspy.streamlit.app/",
   },
   {
-    title: "Blog API",
+    title: "Password-strength-meter",
     description:
       "A RESTful API for a blog application built with Node.js, Express, and MongoDB, featuring user authentication and CRUD operations.",
     image: "/placeholder.svg?height=400&width=600",
     category: "Backend",
-    github: "https://github.com/johndoe/blog-api",
-    live: "https://blog-api-demo.herokuapp.com",
+    github: "https://github.com/Alishba56/password-strength-meter-in-python",
+    live: "https://password-strength-meter-in-python-fny3zhsdkdncvdlp53n3zf.streamlit.app/",
   },
   {
-    title: "Portfolio Website",
+    title: "Number-Guessing-Game",
     description:
       "A responsive portfolio website built with Gatsby.js, featuring a custom design and animations using Framer Motion.",
     image: "/placeholder.svg?height=300&width=300",
     category: "Frontend",
-    github: "https://github.com/johndoe/portfolio-website",
-    live: "https://johndoe-portfolio.netlify.app",
+    github: "https://github.com/Alishba56/Unique-Number-Guessing-Game-InPython",
+    live: "https://unique-number-guessing-game-inpython-xtcemgfm7kah6fbtwbmbzk.streamlit.app/",
   },
   {
-    title: "Real-time Chat Application",
+    title: "Analyzer-in",
     description:
       "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
     image: "/placeholder.svg?height=450&width=600",
     category: "Full Stack",
-    github: "https://github.com/johndoe/realtime-chat-app",
-    live: "https://realtime-chat-app-demo.herokuapp.com",
+    github: "https://github.com/Alishba56/Text-Analyzer-In-Python",
+    live: "https://text-analyzer-in-python-00.streamlit.app/",
+  },
+  {
+    title: "Blog-in",
+    description:
+      "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
+    image: "/placeholder.svg?height=450&width=600",
+    category: "Full Stack",
+    github: "https://github.com/Alishba56/Blogs-website-InSanity",
+    live: "https://blogs-website-in-sanity.vercel.app/  ",
+  },
+  {
+    title: "E-commerce ",
+    description:
+      "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
+    image: "/placeholder.svg?height=450&width=600",
+    category: "frontend",
+    github: "https://github.com/Alishba56/milestone-three-e-commerce-web",
+    live: "https://milestone-three-e-commerce-web.vercel.app/  ",
+  },
+  {
+    title: "  E-commerce",
+    description:
+      "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
+    image: "/placeholder.svg?height=450&width=600",
+    category: "Frontend",
+    github: "https://github.com/Alishba56/hackathon-5",
+    live: "https://hackathon-5-delta.vercel.app/ ",
+  },
+  {
+    title: "Blog",
+    description:
+      "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
+    image: "/placeholder.svg?height=450&width=600",
+    category: "Frontend",
+    github: "https://github.com/Alishba56/milestone-three-blogs-web",
+    live: "https://milestone-three-blogs-web-n4hc.vercel.app/ ",
+  },
+  {
+    title: "personal-website",
+    description:
+      "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
+    image: "/placeholder.svg?height=450&width=600",
+    category: "Frontend",
+    github: "https://github.com/Alishba56/project-personal-website-css",
+    live: "https://project-personal-website-css.vercel.app/",
+  },
+  {
+    title: "assignment-4-5",
+    description:
+      "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
+    image: "/placeholder.svg?height=450&width=600",
+    category: "Frontend",
+    github: "https://github.com/Alishba56/06-assignment",
+    live: "https://06-assignment-rho.vercel.app/",
+  },
+  {
+    title: "blog-website",
+    description:
+      "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
+    image: "/placeholder.svg?height=450&width=600",
+    category: "Frontend",
+    github: "https://github.com/Alishba56/assignment-4-5",
+    live: "https://assignment-4-5-vert.vercel.app/",
   },
 ]
 
-const categories = ["All", "Frontend", "Backend", "Full Stack"]
+const categories = ["All", "Frontend", "Backend"]
 
 export default function Projects() {
   const [ref, controls] = useScrollAnimation()

@@ -23,18 +23,16 @@ export default function About() {
           transition={{ duration: 0.5 }}
         >
           <p className="mb-4 text-purple-900 dark:text-purple-200">
-            With over 5 years of experience in web development, Ive had the opportunity to work on a diverse range of
-            projects, from small business websites to large-scale enterprise applications. My passion lies in creating
-            efficient, scalable, and user-friendly web solutions that solve real-world problems.
+          I&apos;m an enthusiastic front-end developer with a passion for building clean, responsive, and user-friendly web applications. Currently pursuing a Bachelor&apos;s degree in Arts, I am committed to expanding my knowledge and exploring new technologies to create modern digital experiences.
+
           </p>
           <p className="mb-4 text-purple-900 dark:text-purple-200">
-            My expertise spans both frontend and backend technologies, including React, Node.js, Python, and various
-            database systems. Im a strong advocate for clean code, test-driven development, and continuous
-            integration/continuous deployment (CI/CD) practices.
+          My technical skill set includes HTML, CSS, JavaScript, React, and Next.js. I enjoy crafting intuitive user interfaces, optimizing performance, and ensuring accessibility for all users. I believe that good design and efficient code go hand-in-hand to deliver impactful solutions.
+
           </p>
           <p className="text-purple-900 dark:text-purple-200">
-            When Im not coding, you can find me contributing to open-source projects, writing technical blog posts, or
-            exploring the latest web technologies to stay at the forefront of this ever-evolving field.
+          Beyond coding, I am a strong believer in continuous learning and personal growth. I thrive in collaborative environments, embrace new challenges with enthusiasm, and am always ready to contribute fresh ideas to exciting projects. Let&apos;s create something amazing together!
+
           </p>
         </motion.div>
       </div>

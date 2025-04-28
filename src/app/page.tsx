@@ -2,9 +2,11 @@
 
 import About from "@/components/about"
 import Contact from "@/components/contact"
+import Education from "@/components/education"
 import Footer from "@/components/footer"
 import Header from "@/components/header"
 import Hero from "@/components/hero"
+import Interests from "@/components/interest"
 import Projects from "@/components/project"
 import Sidebar from "@/components/sidebar"
 import Skills from "@/components/skill"
@@ -37,9 +39,11 @@ export default function Home() {
       <Sidebar />
       <main className="pt-16">
         <Hero />
-        <About />
+        <Education/>
+        <Interests/>
         <Skills />
         <Projects />
+        <About />
         <Footer />
       </main>
       <Contact isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />

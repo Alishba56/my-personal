@@ -14,6 +14,7 @@ const jobTitles = [
   "Next.js",
   "JavaScript",
   "Sanity CMS",
+  "Python",
   "Tailwind CSS",
 ]
 
@@ -68,8 +69,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.5 }}
           >
-            Crafting robust and scalable web applications with cutting-edge technologies. Passionate about creating
-            seamless user experiences and efficient backend systems.
+            I&apos;m a passionate web developer with a strong focus on front-end
+          technologies. Currently pursuing a Bachelor&apos;s degree in Arts,
+          I&apos;m always eager to learn and grow while working on innovative
+          projects.
           </motion.p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <motion.a
@@ -81,7 +84,7 @@ export default function Hero() {
               View My Work
             </motion.a>
             <motion.a
-              href="/alishba-shahzad-cv.pdf"
+              href="/cv.pdf"
               download
               className="inline-flex items-center justify-center bg-pink-100 text-purple-800 dark:bg-purple-800 dark:text-pink-100 py-2 sm:py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg font-semibold hover:bg-pink-200 dark:hover:bg-purple-700 transition-colors duration-300"
               whileHover={{ scale: 1.05 }}

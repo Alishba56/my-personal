@@ -5,15 +5,17 @@ import Link from "next/link"
 
 const navItems = [
   { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
+  { name: "Education", href: "#education" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
+  { name: "About", href: "#about" },
+
 ]
 
 export default function Sidebar() {
   return (
     <motion.nav
-      className="fixed left-0 top-1/2 transform -translate-y-1/2 z-20"
+      className="fixed left-0 top-1/3 transform -translate-y-1/2 z-20"
       initial={{ x: -100 }}
       animate={{ x: 0 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
