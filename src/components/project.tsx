@@ -5,14 +5,30 @@ import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import { useScrollAnimation } from "../app/hooks/useScrollAnimation"
 import { Github, ExternalLink } from "lucide-react"
+import Image1 from "../../images/imag1.png"
+import Image2 from "../../images/protfolio 1.png"
+import Image3 from "../../images/img3.png"
+import Image4 from "../../images/img4.png"
+import Image5 from "../../images/img5.png"
+import Image6 from "../../images/img6.png"
+import Image7 from "../../images/img7.png"
+import Image8 from "../../images/img8.png"
+import Image9 from "../../images/img9.png"
+
+import Image10 from "../../images/img10.png"
+import Image11 from "../../images/img11.png"
+import Image12 from "../../images/img12.png"
+import Image13 from "../../images/img13.png"
+
+
 
 const projects = [
   {
     title: "E-commerce Platform",
     description:
       "A full-stack e-commerce solution built with Next.js, featuring product listings, shopping cart, and Stripe integration for payments.",
-    image: "/placeholder.svg?height=400&width=600",
-    category: "Full Stack",
+    image: Image1,
+    category: "Backend",
     github: "https://github.com/Alishba56/Next.js_Design_Jam_2024",
     live: "https://honest-bazar.vercel.app/",
   },
@@ -20,7 +36,7 @@ const projects = [
     title: "Personal_Portfolio",
     description:
       "A React-based task management application with drag-and-drop functionality, user authentication, and real-time updates using Firebase.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: Image2,
     category: "Frontend",
     github: "https://github.com/Alishba56/-project-personal-website-tailwind",
     live: "https://project-personal-website-git-01825f-alishbas-projects-e974bd90.vercel.app/",
@@ -29,7 +45,7 @@ const projects = [
     title: "Unit-converter",
     description:
       "A weather dashboard built with Vue.js, utilizing the OpenWeatherMap API and Chart.js for data visualization.",
-    image: "/placeholder.svg?height=500&width=400",
+    image: Image3,
     category: "Frontend",
     github: "https://github.com/Alishba56/unit-converter-in-python",
     live: "https://unit-converter-in-python-6mquzdanubii8sns9waspy.streamlit.app/",
@@ -38,7 +54,7 @@ const projects = [
     title: "Password-strength-meter",
     description:
       "A RESTful API for a blog application built with Node.js, Express, and MongoDB, featuring user authentication and CRUD operations.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: Image4,
     category: "Backend",
     github: "https://github.com/Alishba56/password-strength-meter-in-python",
     live: "https://password-strength-meter-in-python-fny3zhsdkdncvdlp53n3zf.streamlit.app/",
@@ -47,7 +63,7 @@ const projects = [
     title: "Number-Guessing-Game",
     description:
       "A responsive portfolio website built with Gatsby.js, featuring a custom design and animations using Framer Motion.",
-    image: "/placeholder.svg?height=300&width=300",
+    image: Image5,
     category: "Frontend",
     github: "https://github.com/Alishba56/Unique-Number-Guessing-Game-InPython",
     live: "https://unique-number-guessing-game-inpython-xtcemgfm7kah6fbtwbmbzk.streamlit.app/",
@@ -56,7 +72,7 @@ const projects = [
     title: "Analyzer-in",
     description:
       "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
-    image: "/placeholder.svg?height=450&width=600",
+    image: Image6,
     category: "Full Stack",
     github: "https://github.com/Alishba56/Text-Analyzer-In-Python",
     live: "https://text-analyzer-in-python-00.streamlit.app/",
@@ -65,8 +81,8 @@ const projects = [
     title: "Blog-in",
     description:
       "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
-    image: "/placeholder.svg?height=450&width=600",
-    category: "Full Stack",
+    image: Image7,
+    category: "backend",
     github: "https://github.com/Alishba56/Blogs-website-InSanity",
     live: "https://blogs-website-in-sanity.vercel.app/  ",
   },
@@ -74,7 +90,7 @@ const projects = [
     title: "E-commerce ",
     description:
       "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
-    image: "/placeholder.svg?height=450&width=600",
+    image: Image8,
     category: "frontend",
     github: "https://github.com/Alishba56/milestone-three-e-commerce-web",
     live: "https://milestone-three-e-commerce-web.vercel.app/  ",
@@ -83,7 +99,7 @@ const projects = [
     title: "  E-commerce",
     description:
       "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
-    image: "/placeholder.svg?height=450&width=600",
+    image:  Image9,
     category: "Frontend",
     github: "https://github.com/Alishba56/hackathon-5",
     live: "https://hackathon-5-delta.vercel.app/ ",
@@ -92,7 +108,7 @@ const projects = [
     title: "Blog",
     description:
       "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
-    image: "/placeholder.svg?height=450&width=600",
+    image:  Image10,
     category: "Frontend",
     github: "https://github.com/Alishba56/milestone-three-blogs-web",
     live: "https://milestone-three-blogs-web-n4hc.vercel.app/ ",
@@ -101,7 +117,7 @@ const projects = [
     title: "personal-website",
     description:
       "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
-    image: "/placeholder.svg?height=450&width=600",
+    image: Image11,
     category: "Frontend",
     github: "https://github.com/Alishba56/project-personal-website-css",
     live: "https://project-personal-website-css.vercel.app/",
@@ -110,7 +126,7 @@ const projects = [
     title: "assignment-4-5",
     description:
       "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
-    image: "/placeholder.svg?height=450&width=600",
+    image: Image12,
     category: "Frontend",
     github: "https://github.com/Alishba56/06-assignment",
     live: "https://06-assignment-rho.vercel.app/",
@@ -119,7 +135,7 @@ const projects = [
     title: "blog-website",
     description:
       "A real-time chat application built with Socket.io, Express, and React, featuring private messaging and chat rooms.",
-    image: "/placeholder.svg?height=450&width=600",
+    image: Image13,
     category: "Frontend",
     github: "https://github.com/Alishba56/assignment-4-5",
     live: "https://assignment-4-5-vert.vercel.app/",

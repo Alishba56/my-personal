@@ -2,21 +2,41 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { Code, Database, Server, Globe, Cpu, Lock, Zap, Layers } from "lucide-react"
+import {
+  Code,
+  Paintbrush2,
+  Code2,
+  Braces,
+  Feather,
+  Github,
+  Palette,
+  MonitorSmartphone,
+  Shuffle,
+  Server,
+  Rocket,
+  BrainCircuit ,
+} from "lucide-react"
 
 const skills = [
-  { name: "Frontend Development", level: 90, icon: Globe },
-  { name: "Backend Development", level: 85, icon: Server },
-  { name: "Database Management", level: 80, icon: Database },
-  { name: "API Development", level: 85, icon: Cpu },
-  { name: "DevOps", level: 75, icon: Zap },
-  { name: "Version Control", level: 90, icon: Code },
-  { name: "Security", level: 80, icon: Lock },
-  { name: "Architecture", level: 85, icon: Layers },
+  { name: "HTML", level: 95, icon: Code2 },
+  { name: "CSS", level: 95, icon: Paintbrush2 },
+  { name: "JavaScript", level: 80, icon: Braces },
+  { name: "TypeScript", level: 85, icon: Code },
+  { name: "Next.js", level: 80, icon: Rocket },
+  { name: "Tailwind CSS", level: 90, icon: Feather },
+  { name: "GSAP", level: 50, icon: Shuffle },
+  { name: "Framer Motion", level: 55, icon: Shuffle },
+  { name: "Sanity CMS", level: 75, icon: Server },
+  { name: "Vercel", level: 80, icon: Rocket },
+  { name: "GitHub", level: 90, icon: Github },
+  { name: "Responsive Design", level: 90, icon: MonitorSmartphone },
+  { name: "UI/UX Design", level: 85, icon: Palette },
+  { name: "Python", level: 40, icon: BrainCircuit }, // ✅ Newly added
+
 ]
 
 const SkillCircle = ({ skill, inView }: { skill: (typeof skills)[0]; inView: boolean }) => {
-  const circumference = 2 * Math.PI * 40 // 40 is the radius of the circle
+  const circumference = 2 * Math.PI * 40
 
   return (
     <div className="flex flex-col items-center">
@@ -39,7 +59,11 @@ const SkillCircle = ({ skill, inView }: { skill: (typeof skills)[0]; inView: boo
             r="40"
             fill="transparent"
             initial={{ strokeDasharray: circumference, strokeDashoffset: circumference }}
-            animate={{ strokeDashoffset: inView ? circumference - (skill.level / 100) * circumference : circumference }}
+            animate={{
+              strokeDashoffset: inView
+                ? circumference - (skill.level / 100) * circumference
+                : circumference,
+            }}
             transition={{ duration: 1, ease: "easeInOut" }}
           />
         </svg>
@@ -47,7 +71,9 @@ const SkillCircle = ({ skill, inView }: { skill: (typeof skills)[0]; inView: boo
           <skill.icon size={32} className="text-purple-600 dark:text-purple-400" />
         </div>
       </div>
-      <h3 className="text-lg font-semibold mb-2 text-center text-purple-800 dark:text-purple-300">{skill.name}</h3>
+      <h3 className="text-lg font-semibold mb-2 text-center text-purple-800 dark:text-purple-300">
+        {skill.name}
+      </h3>
       <p className="text-purple-600 dark:text-purple-400 font-bold">{skill.level}%</p>
     </div>
   )
@@ -81,4 +107,3 @@ export default function Skills() {
     </section>
   )
 }
-

@@ -28,7 +28,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="text-gray-600 dark:text-gray-400">
-          &copy; {new Date().getFullYear()} John Doe. All rights reserved.
+          &copy; {new Date().getFullYear()} Alishba Shazad. All rights reserved.
         </p>
       </div>
     </motion.footer>
