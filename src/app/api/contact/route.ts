@@ -1,14 +1,8 @@
 import { NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
-type ContactFormData = {
-  name: string
-  email: string
-  message: string
-}
-
 export async function POST(request: Request) {
-  const { name, email, message }: ContactFormData = await request.json()
+  const { name, email, message } = await request.json()
 
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -33,13 +27,8 @@ export async function POST(request: Request) {
     })
 
     return NextResponse.json({ success: true })
-  } catch (error) {
+  } catch (error: any) {
     console.error('Email Error:', error)
-
-    // Use type assertion to access `.message` safely
-    const errorMessage =
-      error instanceof Error ? error.message : 'Unknown error'
-
-    return NextResponse.json({ success: false, error: errorMessage }, { status: 500 })
+    return NextResponse.json({ success: false, error: error.message }, { status: 500 })
   }
 }
