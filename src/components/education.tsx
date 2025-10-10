@@ -36,8 +36,9 @@ export default function Education() {
               <ul className="list-disc list-inside text-gray-500 dark:text-gray-400">
                 <li>TypeScript (Completed)</li>
                 <li>Next.js (Completed)</li>
-                <li>Python (Ongoing)</li>
-                <li>Generative AI (Upcoming)</li>
+                <li>Python (Completed)</li>
+                <li>Agentic AI (Completed)</li>
+                <li>Generative AI (Ongoing)</li>
               </ul>
             </div>
             <p className="text-gray-500 dark:text-gray-400 mt-4">Status: In Progress</p>
