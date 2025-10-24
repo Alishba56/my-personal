@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import { Download } from "lucide-react"
 import profile from "./alisha.png"
+// import cv from "@/Public/Alishba_Shahzad.pdf"
 
 const jobTitles = [
   "Frontend Developer",
@@ -86,7 +87,7 @@ export default function Hero() {
               View My Work
             </motion.a>
 <motion.a
-  href="/Alishba_Shahzad.pdf"
+  href={"/Alishba_Shahzad.pdf"}
   download="Alishba_Shahzad_CV.pdf"
   className="inline-flex items-center justify-center bg-pink-100 text-purple-800 dark:bg-purple-800 dark:text-pink-100 py-2 sm:py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg font-semibold hover:bg-pink-200 dark:hover:bg-purple-700 transition-colors duration-300"
   whileHover={{ scale: 1.05 }}
