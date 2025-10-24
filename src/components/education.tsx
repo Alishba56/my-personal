@@ -37,7 +37,7 @@ export default function Education() {
                 <li>TypeScript (Completed)</li>
                 <li>Next.js (Completed)</li>
                 <li>Python (Completed)</li>
-                <li>Generative AI (Ongoing)</li>
+                <li>Agentic AI (Ongoing)</li>
               </ul>
             </div>
             <p className="text-gray-500 dark:text-gray-400 mt-4">Status: In Progress</p>
