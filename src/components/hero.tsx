@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
-import { Download ,Eye} from "lucide-react"
+import { Download } from "lucide-react"
 import profile from "./alisha.png"
 // import cv from "@/Public/Alishba_Shahzad.pdf"
 
@@ -86,18 +86,6 @@ export default function Hero() {
             >
               View My Work
             </motion.a>
-   {/* 👁 Preview CV */}
-      <motion.a
-        href="/resume.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="flex items-center justify-center bg-pink-100 text-purple-800 dark:bg-purple-800 dark:text-pink-100 hover:bg-purple-600 transition-colors duration-300 py-2 px-5 rounded-full font-semibold"
-      >
-        <Eye className="mr-2 h-5 w-5" />
-        Preview CV
-      </motion.a>
 
       {/* ⬇ Download CV */}
       <motion.a
