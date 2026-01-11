@@ -15,7 +15,7 @@ export default function Footer() {
     <div className="flex justify-center space-x-6 mb-4">
   {[
     { Icon: Github, link: "https://github.com/Alishba56" },
-    { Icon: Linkedin, link: "https://www.linkedin.com/in/alishba-shahzad-3367092ba/" }, 
+    { Icon: Linkedin, link: "https://www.linkedin.com/in/alishba-shahzad-web/" }, 
     { Icon: Twitter, link: "https://x.com/Alishbah0723" },
   ].map(({ Icon, link }, index) => (
     <motion.a
