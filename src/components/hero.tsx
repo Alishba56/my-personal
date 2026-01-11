@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
-import { Download } from "lucide-react"
+import { Download ,Eye} from "lucide-react"
 import profile from "./alisha.png"
 // import cv from "@/Public/Alishba_Shahzad.pdf"
 
@@ -86,19 +86,30 @@ export default function Hero() {
             >
               View My Work
             </motion.a>
-<motion.a
-  href="/resume.pdf"
-  download
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center justify-center bg-pink-100 text-purple-800 dark:bg-purple-800 dark:text-pink-100 py-2 sm:py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg font-semibold hover:bg-pink-200 dark:hover:bg-purple-700 transition-colors duration-300"
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
->
-  <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-  Download CV
-</motion.a>
+   {/* 👁 Preview CV */}
+      <motion.a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="flex items-center justify-center bg-pink-100 text-purple-800 dark:bg-purple-800 dark:text-pink-100 hover:bg-purple-600 transition-colors duration-300 py-2 px-5 rounded-full font-semibold"
+      >
+        <Eye className="mr-2 h-5 w-5" />
+        Preview CV
+      </motion.a>
 
+      {/* ⬇ Download CV */}
+      <motion.a
+        href="/resume.pdf"
+        download="resume.pdf"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="flex items-center justify-center hover:bg-purple-600 transition-colors duration-300 bg-pink-100 text-purple-800 dark:bg-purple-800 dark:text-pink-100 py-2 px-6 rounded-full font-semibold"
+      >
+        <Download className="mr-2 h-5 w-5" />
+        Download CV
+      </motion.a>
           </div>
         </motion.div>
         <motion.div
